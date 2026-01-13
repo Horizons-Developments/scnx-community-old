@@ -3,7 +3,7 @@ class WebsiteFooter extends HTMLElement {
         
         const lang = this.getAttribute("lang") || "en";
 
-        if ("lang" === "en") {
+        if (lang === "en") {
             this.innerHTML = `
                 <footer class="footer">
 
