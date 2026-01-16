@@ -45,15 +45,15 @@ class SubmenuArrowIcon extends HTMLElement {
 
         this.innerHTML = `
             <svg viewBox="0 0 10 6" aria-hidden="true">
-                    <polyline 
-                        points="1 1 5 5 9 1" 
-                        fill="none" 
-                        stroke="currentColor" 
-                        stroke-width="1.5" 
-                        stroke-linecap="round" 
-                        stroke-linejoin="round" 
-                    />
-                </svg>
+                <polyline 
+                    points="1 1 5 5 9 1" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    stroke-width="1.5" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                />
+            </svg>
         `;
 
     }

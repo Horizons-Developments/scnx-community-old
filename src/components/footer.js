@@ -67,12 +67,38 @@ class WebsiteFooter extends HTMLElement {
                             <p class="text">Not in conjunction with <a class="link" href="https://scootkit.com" target="_blank" rel="noreferrer">ScootKit</a>.</p>
                         </div>
                         <div class="footer-block">
-                                <p class="text">Made by Timon from <a class="link" href="https://github.com/Horizons-Developments" target="_blank" rel="noreferrer">Horizons Developments</a></p>
+                                <p class="text">Made by Timon from <a class="link" href="https://github.com/Horizons-Developments" target="_blank" rel="noreferrer">Horizons Developments</a> ✨</p>
                         </div>
 
                     </div>
 
                 </footer>
+
+                <div class="overlay" id="overlay">
+                    <div class="note" id="note">
+                        <div class="content-block">
+                            <h4 class="heading4">We have some cookies 🍪 and a note for you 💡</h4>
+                        </div>
+                        <div class="content-block">
+                            <div class="text-block">
+                                <p class="text">
+                                    By confirming this note, you agree to the following:
+                                </p>
+                                <p class="text">
+                                    We only collect the most necessary data from you, which includes technical cookies in particular - you can find more information in our <a class="link" href="/privacy-policy/">privacy policy</a>.
+                                </p>
+                                <p class="text">
+                                    We are an official community project, but we are not directly affiliated with <a class="link" href="https://scootkit.com" target="_blank" rel="noreferrer">ScootKit</a>.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content-block">
+                            <a class="button" id="note-close-button">
+                                Confirm <arrow-icon direction="right"></arrow-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             `;
         }
 
@@ -146,8 +172,55 @@ class WebsiteFooter extends HTMLElement {
                     </div>
 
                 </footer>
+
+                <div class="overlay" id="overlay">
+                    <div class="note" id="note">
+                        <div class="content-block">
+                            <h4 class="heading4">Wir haben ein paar Kekse 🍪 und einen Hinweis für dich 💡</h4>
+                        </div>
+                        <div class="content-block">
+                            <div class="text-block">
+                                <p class="text">
+                                    Wenn du diesen Hinweis bestätigst, nimmst du Folgendes zur Kenntnis:
+                                </p>
+                                <p class="text">
+                                    Wir sammeln nur notwendigste Daten von dir, was insbesondere technische Cookies umfasst - weitere Infos findest du in unserer <a class="link" href="/de/privacy-policy/">Datenschutzerklärung</a>.
+                                </p>
+                                <p class="text">
+                                    Wir sind ein offizielles Community-Projekt, stehen jedoch in keiner direkten Verbindung zu <a class="link" href="https://scootkit.com" target="_blank" rel="noreferrer">ScootKit</a>.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content-block">
+                            <a class="button" id="note-close-button">
+                                Bestätigen <arrow-icon direction="right"></arrow-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             `;
         }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const overlay = document.getElementById("overlay");
+            const note = document.getElementById("note");
+            const noteCloseButton = document.getElementById("note-close-button");
+
+            const hasVisited = localStorage.getItem("hasVisited");
+
+            if (!hasVisited) {
+                note.style.display = "flex";
+                overlay.style.display = "flex";
+                document.body.classList.add("no-scroll");
+            }
+
+            noteCloseButton.addEventListener("click", () => {
+                note.style.display = "none";
+                overlay.style.display = "none";
+                document.body.classList.remove("no-scroll");
+                localStorage.setItem("hasVisited", "true");
+            });
+        });
     
     }
 }

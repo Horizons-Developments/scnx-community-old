@@ -146,6 +146,43 @@ body {
     width: 100%;
 }
 
+.overlay {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000090;
+    z-index: 1000;
+    pointer-events: auto;
+}
+
+.note {
+    display: none;
+    position: fixed;
+    flex: 1;
+    flex-direction: column;
+    width: 80%;
+    min-height: 0;
+    height: 80%;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 5rem;
+    border: 2px solid #FFFFFF;
+    border-radius: 15px;
+    background-color: #000000;
+    z-index: 1001;
+    overflow-x: hidden;
+    overflow-y: auto;
+    pointer-events: auto;
+}
+
 
 
 /* ---------------------------------------------------------------------------------------------------- FONTS --- */

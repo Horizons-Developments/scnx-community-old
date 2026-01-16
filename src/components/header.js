@@ -151,10 +151,47 @@ class WebsiteHeader extends HTMLElement {
                                 <a class="navigation-link" href="/contact/">Contact</a>
                             </div>
                         </li>
-                        <li class="navigation-element">
-                            <a class="button" href="https://dashboard.scnx-community.com" target="_blank" rel="noreferrer">
-                                Dashboard <arrow-icon direction="right"></arrow-icon>
-                            </a>
+                    </ul>
+                    <ul class="items-menu">
+                        <li class="items-element">
+                            <div class="items-wrapper-left">
+                                <input class="language-switcher" type="radio" name="submenu" id="language-switcher" aria-hidden="true">
+                                <label class="language-switcher-label language-switcher-open" for="language-switcher">
+                                    <a class="language-link" href="/">
+                                        <img class="language-image" src="/assets/images/country-flags/us.png">EN
+                                    </a>
+                                    <submenu-arrow-icon></submenu-arrow-icon>
+                                </label>
+                                <label class="language-switcher-label language-switcher-close" for="navigation-submenu-reset">
+                                    <a class="language-link" href="/">
+                                        <img class="language-image" src="/assets/images/country-flags/us.png">EN
+                                    </a>
+                                    <submenu-arrow-icon></submenu-arrow-icon>
+                                </label>
+                            </div>
+                            <ul class="language-submenu">
+                                <li class="items-element">
+                                    <div class="items-wrapper-left">
+                                        <a class="language-link-submenu" href="/de/">
+                                            <img class="language-image-submenu" src="/assets/images/country-flags/de.png">DE
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="items-element">
+                                    <div class="items-wrapper-left">
+                                        <a class="language-link-submenu" href="/">
+                                            <img class="language-image-submenu" src="/assets/images/country-flags/us.png">EN
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="items-element">
+                            <div class="items-wrapper-right">
+                                <a class="button" href="https://dashboard.scnx-community.com/de/" target="_blank" rel="noreferrer">
+                                    Dashboard <arrow-icon direction="right"></arrow-icon>
+                                </a>
+                            </div>
                         </li>
                     </ul>
                 </nav>
@@ -309,10 +346,47 @@ class WebsiteHeader extends HTMLElement {
                                 <a class="navigation-link" href="/de/contact/">Kontakt</a>
                             </div>
                         </li>
-                        <li class="navigation-element">
-                            <a class="button" href="https://dashboard.scnx-community.com/de/" target="_blank" rel="noreferrer">
-                                Dashboard <arrow-icon direction="right"></arrow-icon>
-                            </a>
+                    </ul>
+                    <ul class="items-menu">
+                        <li class="items-element">
+                            <div class="items-wrapper-left">
+                                <input class="language-switcher" type="radio" name="submenu" id="language-switcher" aria-hidden="true">
+                                <label class="language-switcher-label language-switcher-open" for="language-switcher">
+                                    <a class="language-link" href="/de/">
+                                        <img class="language-image" src="/assets/images/country-flags/de.png">DE
+                                    </a>
+                                    <submenu-arrow-icon></submenu-arrow-icon>
+                                </label>
+                                <label class="language-switcher-label language-switcher-close" for="navigation-submenu-reset">
+                                    <a class="language-link" href="/de/">
+                                        <img class="language-image" src="/assets/images/country-flags/de.png">DE
+                                    </a>
+                                    <submenu-arrow-icon></submenu-arrow-icon>
+                                </label>
+                            </div>
+                            <ul class="language-submenu">
+                                <li class="items-element">
+                                    <div class="items-wrapper-left">
+                                        <a class="language-link-submenu" href="/de/">
+                                            <img class="language-image-submenu" src="/assets/images/country-flags/de.png">DE
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="items-element">
+                                    <div class="items-wrapper-left">
+                                        <a class="language-link-submenu" href="/">
+                                            <img class="language-image-submenu" src="/assets/images/country-flags/us.png">EN
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="items-element">
+                            <div class="items-wrapper-right">
+                                <a class="button" href="https://dashboard.scnx-community.com/de/" target="_blank" rel="noreferrer">
+                                    Dashboard <arrow-icon direction="right"></arrow-icon>
+                                </a>
+                            </div>
                         </li>
                     </ul>
                 </nav>
@@ -333,6 +407,12 @@ class WebsiteHeader extends HTMLElement {
             if (active.startsWith(href) && href.split("/").length > 2) {
                 link.classList.add("navigation-link-active");
             }
+        });
+
+        const toggle = document.getElementById("navigation-toggle");
+
+        toggle.addEventListener("change", () => {
+            document.body.classList.toggle("no-scroll", toggle.checked);
         });
 
     }
