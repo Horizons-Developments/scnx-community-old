@@ -157,15 +157,13 @@ class WebsiteHeader extends HTMLElement {
                             <div class="items-wrapper-left">
                                 <input class="language-switcher" type="radio" name="submenu" id="language-switcher" aria-hidden="true">
                                 <label class="language-switcher-label language-switcher-open" for="language-switcher">
-                                    <a class="language-link" href="/">
-                                        <img class="language-image" src="/assets/images/country-flags/us.png">EN
-                                    </a>
+                                    <img class="language-image" src="/assets/images/country-flags/us.png">
+                                    <span>EN</span>
                                     <submenu-arrow-icon></submenu-arrow-icon>
                                 </label>
                                 <label class="language-switcher-label language-switcher-close" for="navigation-submenu-reset">
-                                    <a class="language-link" href="/">
-                                        <img class="language-image" src="/assets/images/country-flags/us.png">EN
-                                    </a>
+                                    <img class="language-image" src="/assets/images/country-flags/us.png">
+                                    <span>EN</span>
                                     <submenu-arrow-icon></submenu-arrow-icon>
                                 </label>
                             </div>
@@ -352,15 +350,13 @@ class WebsiteHeader extends HTMLElement {
                             <div class="items-wrapper-left">
                                 <input class="language-switcher" type="radio" name="submenu" id="language-switcher" aria-hidden="true">
                                 <label class="language-switcher-label language-switcher-open" for="language-switcher">
-                                    <a class="language-link" href="/de/">
-                                        <img class="language-image" src="/assets/images/country-flags/de.png">DE
-                                    </a>
+                                    <img class="language-image" src="/assets/images/country-flags/de.png">
+                                    <span>DE</span>
                                     <submenu-arrow-icon></submenu-arrow-icon>
                                 </label>
                                 <label class="language-switcher-label language-switcher-close" for="navigation-submenu-reset">
-                                    <a class="language-link" href="/de/">
-                                        <img class="language-image" src="/assets/images/country-flags/de.png">DE
-                                    </a>
+                                    <img class="language-image" src="/assets/images/country-flags/de.png">
+                                    <span>DE</span>
                                     <submenu-arrow-icon></submenu-arrow-icon>
                                 </label>
                             </div>

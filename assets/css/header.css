@@ -70,7 +70,7 @@ body.no-scroll {
     right: 0;
     left: 0;
     width: 100%;
-    height: calc(100vh - 80px);
+    height: calc(100dvh - 80px);
     background-color: #000000;
     overflow-y: auto;
     z-index: 888;
@@ -120,7 +120,7 @@ body.no-scroll {
 }
 
 .navigation-link-active {
-    color: #FFA500;
+    color: #1CBC9D;
 }
 
 .navigation-wrapper {
@@ -141,7 +141,7 @@ body.no-scroll {
     bottom: -1rem;
     width: 0%;
     height: 2px;
-    background-color: #FFA500;
+    background-color: #1CBC9D;
     transition: width 0.2s ease;
 }
 
@@ -150,11 +150,11 @@ body.no-scroll {
 }
 
 .navigation-wrapper:hover .navigation-link {
-    color: #FFA500;
+    color: #1CBC9D;
 }
 
 .navigation-wrapper:hover .navigation-arrow-label svg polyline {
-    stroke: #FFA500;
+    stroke: #1CBC9D;
 }
 
 .navigation-arrow {
@@ -278,12 +278,11 @@ body.no-scroll {
     flex-direction: row;
     width: auto;
     height: auto;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
     pointer-events: auto;
     cursor: pointer;
-    z-index: 889;
     transition: transform 0.25s ease;
 }
 
@@ -312,6 +311,14 @@ body.no-scroll {
     align-items: center;
     pointer-events: auto;
     cursor: pointer; 
+}
+
+.items-wrapper-left span {
+    font-family: "Orbitron", Arial, sans-serif;
+    font-size: 1rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 .language-image {
@@ -391,7 +398,7 @@ body.no-scroll {
     bottom: -0.75rem;
     width: 0%;
     height: 2px;
-    background-color: #FFA500;
+    background-color: #1CBC9D;
     transition: width 0.2s ease;
 }
 
@@ -399,12 +406,12 @@ body.no-scroll {
     width: 100%;
 }
 
-.items-wrapper-left:hover .language-link {
-    color: #FFA500;
+.items-wrapper-left:hover .language-image {
+    color: #1CBC9D;
 }
 
 .items-wrapper-left:hover .language-switcher-label svg polyline {
-    stroke: #FFA500;
+    stroke: #1CBC9D;
 }
 
 .items-element:has(.language-switcher:checked) .language-switcher-close svg {

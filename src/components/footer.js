@@ -53,6 +53,41 @@ class WebsiteFooter extends HTMLElement {
                             </ul>
                         </div>
                         <div class="footer-block">
+                            <ul class="items-menu">
+                                <li class="items-element">
+                                    <div class="items-wrapper-left">
+                                        <input class="language-switcher" type="checkbox" id="language-switcher-footer" aria-hidden="true">
+                                        <label class="language-switcher-label language-switcher-open" for="language-switcher-footer">
+                                            <img class="language-image" src="/assets/images/country-flags/us.png">
+                                            <span>EN</span>
+                                            <submenu-arrow-icon></submenu-arrow-icon>
+                                        </label>
+                                        <label class="language-switcher-label language-switcher-close" for="language-switcher-footer">
+                                            <img class="language-image" src="/assets/images/country-flags/us.png">
+                                            <span>EN</span>
+                                            <submenu-arrow-icon></submenu-arrow-icon>
+                                        </label>
+                                    </div>
+                                    <ul class="language-submenu">
+                                        <li class="items-element">
+                                            <div class="items-wrapper-left">
+                                                <a class="language-link-submenu" href="/de/">
+                                                    <img class="language-image-submenu" src="/assets/images/country-flags/de.png">DE
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="items-element">
+                                            <div class="items-wrapper-left">
+                                                <a class="language-link-submenu" href="/">
+                                                    <img class="language-image-submenu" src="/assets/images/country-flags/us.png">EN
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>  
+                        </div>
+                        <div class="footer-block">
                             <a class="button" href="https://dcserver.link/scnx-community" target="_blank" rel="noreferrer">
                                 Discord <arrow-icon direction="right"></arrow-icon>
                             </a>
@@ -64,7 +99,7 @@ class WebsiteFooter extends HTMLElement {
                             </a>
                         </div>
                         <div class="footer-block">
-                            <p class="text">Not in conjunction with <a class="link" href="https://scootkit.com" target="_blank" rel="noreferrer">ScootKit</a>.</p>
+                            <p class="text">Not affiliated with <a class="link" href="https://scootkit.com" target="_blank" rel="noreferrer">ScootKit</a>.</p>
                         </div>
                         <div class="footer-block">
                                 <p class="text">Made by Timon from <a class="link" href="https://github.com/Horizons-Developments" target="_blank" rel="noreferrer">Horizons Developments</a> ✨</p>
@@ -77,18 +112,20 @@ class WebsiteFooter extends HTMLElement {
                 <div class="overlay" id="overlay">
                     <div class="note" id="note">
                         <div class="content-block">
-                            <h4 class="heading4">We have some cookies 🍪 and a note for you 💡</h4>
+                            <h4 class="heading4">
+                                Hey 👋<br>
+                                Just a quick note before you continue 💡
+                            </h4>
                         </div>
                         <div class="content-block">
                             <div class="text-block">
                                 <p class="text">
-                                    By confirming this note, you agree to the following:
+                                    We are an official community project, but we are not directly affiliated with <a class="link" href="https://scootkit.com" target="_blank" rel="noreferrer">ScootKit.</a>
                                 </p>
                                 <p class="text">
-                                    We only collect the most necessary data from you, which includes technical cookies in particular - you can find more information in our <a class="link" href="/privacy-policy/">privacy policy</a>.
-                                </p>
-                                <p class="text">
-                                    We are an official community project, but we are not directly affiliated with <a class="link" href="https://scootkit.com" target="_blank" rel="noreferrer">ScootKit</a>.
+                                    About privacy: We collect technical cookies that are necessary for this website to function properly.<br>
+                                    We never share your data with third parties to provide you with the best possible privacy.<br>
+                                    You can find more information in our <a class="link" href="/privacy-policy/">privacy policy.</a>
                                 </p>
                             </div>
                         </div>
@@ -176,18 +213,19 @@ class WebsiteFooter extends HTMLElement {
                 <div class="overlay" id="overlay">
                     <div class="note" id="note">
                         <div class="content-block">
-                            <h4 class="heading4">Wir haben ein paar Kekse 🍪 und einen Hinweis für dich 💡</h4>
+                            <h4 class="heading4">
+                                Hey 👋<br>
+                                Nur ein kleiner Hinweis, bevor es weitergeht 💡</h4>
                         </div>
                         <div class="content-block">
                             <div class="text-block">
                                 <p class="text">
-                                    Wenn du diesen Hinweis bestätigst, nimmst du Folgendes zur Kenntnis:
+                                    Wir sind ein offizielles Community-Projekt, stehen jedoch in keiner direkten Verbindung zu <a class="link" href="https://scootkit.com" target="_blank" rel="noreferrer">ScootKit.</a>
                                 </p>
                                 <p class="text">
-                                    Wir sammeln nur notwendigste Daten von dir, was insbesondere technische Cookies umfasst - weitere Infos findest du in unserer <a class="link" href="/de/privacy-policy/">Datenschutzerklärung</a>.
-                                </p>
-                                <p class="text">
-                                    Wir sind ein offizielles Community-Projekt, stehen jedoch in keiner direkten Verbindung zu <a class="link" href="https://scootkit.com" target="_blank" rel="noreferrer">ScootKit</a>.
+                                    Zum Thema Datenschutz: Wir sammeln insbesondere technische Cookies, die zum Funktionieren dieser Website notwendig sind.<br>
+                                    Wir geben deine Daten niemals an Dritte weiter, um dir einen bestmöglichen Datenschutz zu bieten.<br>
+                                    Weitere Infos findest du in unserer <a class="link" href="/de/privacy-policy/">Datenschutzerklärung.</a>
                                 </p>
                             </div>
                         </div>
