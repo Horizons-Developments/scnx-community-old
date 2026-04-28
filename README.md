@@ -1,3 +1,9 @@
+# ⚠️ /// Note /// ⚠️
+
+This repository represents an old version of the landing page and had been updated in a new (private) repository now. Thank you nevertheless for stopping by!
+
+---
+
 # SCNX Community
 
 Hey and welcome to our SCNX Community repository!
